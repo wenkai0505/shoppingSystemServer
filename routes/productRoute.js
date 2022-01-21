@@ -106,7 +106,6 @@ router.get('/:_id', (req, res) => {
 // 修改商品
 router.patch('/:_id', (req, res) => {
     let { _id } = req.params
-    console.log(_id)
 
     Product.findOne({ _id }, (err, product) => {
         if (err) {
